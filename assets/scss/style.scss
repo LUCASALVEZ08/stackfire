@@ -1,0 +1,71 @@
+@import "import.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: $font-oswald;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: $Big-Machine-6-hex;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 25vh;
+
+  & .cont-img {
+    background-image: url(../img/codes-blue.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25vh;
+    border-bottom: 1px solid $Big-Machine-2-hex;
+  }
+
+  & .cont-perfil {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 85px;
+
+    & img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 1px solid $Big-Machine-2-hex;
+    }
+  }
+}
+
+.main-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 95px;
+
+  & h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.4em;
+    color: $Big-Machine-1-hex;
+  }
+
+  & p {
+    font-weight: 300;
+  }
+
+  & span {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $Big-Machine-1-hex;
+  }
+}
